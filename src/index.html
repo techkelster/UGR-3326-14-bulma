@@ -1,48 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Index</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-carousel@3.0.0/css/bulma-carousel.min.css"
+    />
+
     <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+      src="https://kit.fontawesome.com/3fcd3104bc.js"
+      crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <div class="my_title">Junior Software Engineer</div>
-      <nav>
+    <header class="hero">
+      <div>
+        <div
+          class="hero-body color-main color-main-text-3 has-text-centered is-size-7000"
+          ><p class="level-item">Junior Software Engineer</p></div
+        >
+        <div class="level-left fa-arrow-left"></div>
+      </div>
+
+      <nav class="level-left">
         <ul>
-          <li><a href="whoami.html">Who am I</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li> <a href="booksiread.html">Books I read</a></li>
-          <li><a href="belifs.html">Belifs</a></li>
-          <li><a href="hobby.html">Hobby</a></li>
+          <li
+            class="button is-fullwidth header color-main-2 .color-main-text-3 mt-3 mb-3 ml-3 mr-3 pt-5 pb-5 pl-5 pr-5"
+            ><a style="color: white" href="whoami.html" class=""
+              >Who am I</a
+            ></li
+          >
+          <li
+            class="button is-fullwidth color-main-2 header .color-main-text-3 mt-3 mb-3 ml-3 mr-3 pt-5 pb-5 pl-5 pr-5"
+            ><a style="color: white" href="projects.html">Projects</a></li
+          >
+          <li
+            class="button is-fullwidth color-main-2 header .color-main-text-3 mt-3 mb-3 ml-3 mr-3 pt-5 pb-5 pl-5 pr-5"
+          >
+            <a style="color: white" href="booksiread.html">Books I read</a></li
+          >
+          <li
+            class="button is-fullwidth color-main-2 header .color-main-text-3 mt-3 mb-3 ml-3 mr-3 pt-5 pb-5 pl-5 pr-5"
+            ><a style="color: white" href="hobby.html">Hobby</a></li
+          >
         </ul>
       </nav>
     </header>
     <section class="Tech_news">
-      <h2>head line from tech news api</h2>
-      <figure>
-        <img
-          src="images/tech.jpeg"
-          alt="The tech news image from API"
-          width="500"
-        />
-        <figcaption>head line from tech news api</figcaption>
-      </figure>
-    </section>
-    <footer>
-      <div class="my_socials">
-        <span>Facebook</span>
-        <span>Instagram</span>
+      <h2 class="main-news-title">The World Of Tech</h2>
+      <div class="the_news">
+        <article class=".news-container">
+          <h3 class="news-headline">
+            <a href="#"
+              >Breakthrough in AI: Self-Learning Algorithms Redefine Machine
+              Intelligence</a
+            >
+          </h3>
+          <figure>
+            <img
+              src="images/tech.jpeg"
+              alt="The tech news image from API"
+              width="100%"
+            />
+          </figure>
+        </article>
+
+        <!-- Arrows and Dots for Image Sliding Direction -->
+        <div class="slideshow-controls">
+          <i class="fas fa-chevron-left lef"></i>
+          <!-- Left Arrow -->
+          <i class="fas fa-chevron-right ryt"></i>
+          <!-- Right Arrow -->
+          <div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
       </div>
-      <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
+    </section>
+    <section class="section">
+      <div class="container">
+        <!-- Start Carousel -->
+        <div id="carousel-demo" class="carousel">
+          <div class="item-1">
+            <!-- Slide Content -->
+          </div>
+          <div class="item-2">
+            <!-- Slide Content -->
+          </div>
+          <div class="item-3">
+            <!-- Slide Content -->
+          </div>
+        </div>
+        <!-- End Carousel -->
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+      bulmaCarousel.attach("#carousel-demo", {
+        slidesToScroll: 1,
+        slidesToShow: 4,
+      });
+    </script>
+
+    <footer class="hero color-main color-main-text-3">
+      <div class="footer-content">
+        <div class="my_socials">
+          <a
+            href="https://www.facebook.com/your-facebook-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-facebook fa-3x"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/your-instagram-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-instagram fa-3x"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/your-linkedin-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-linkedin fa-3x"></span>
+          </a>
+          <a
+            href="https://github.com/your-github-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-github fa-3x"></span>
+          </a>
+          <a
+            href="https://www.youtube.com/c/your-youtube-channel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fa-brands fa-youtube fa-3x"></span>
+          </a>
+          <!-- Add more social media icons and links as needed -->
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Me</h3>
+          <p
+            >Email:
+            <a href="mailto:techkelster@gmail.com">techkelster@gmail.com</a></p
+          >
+          <p>Phone: +251966072233 </p>
+          <!-- Add more contact information as needed -->
+        </div>
+      </div>
     </footer>
+    <div class="copyright">
+      <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
+    </div>
   </body>
 </html>
