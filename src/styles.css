@@ -1,5 +1,6 @@
 header .color-main,
-header .color-main {
+header .color-main,
+body {
   background-color: #164863;
 }
 
@@ -33,4 +34,11 @@ header .color-main-text-3 {
 
 header a {
   text-decoration: none;
+}
+
+nav {
+  background-image: url("images/developer_img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
