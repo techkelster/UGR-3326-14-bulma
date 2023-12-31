@@ -1,0 +1,44 @@
+header .color-main,
+header .color-main,
+body {
+  background-color: #164863;
+}
+
+header .color-main-2 {
+  background-color: #427d9d;
+}
+
+.color-main-3 {
+  background-color: #9bbec8;
+}
+
+.color-main-4 {
+  background-color: #ddf2fd;
+}
+
+.color-main-text {
+  color: #164863;
+}
+
+.color-main-text-2 {
+  color: #427d9d;
+}
+
+header .color-main-text-3 {
+  color: #9bbec8;
+}
+
+.color-main-text-4 {
+  color: #ddf2fd;
+}
+
+header a {
+  text-decoration: none;
+}
+
+nav {
+  background-image: url("images/developer_img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
